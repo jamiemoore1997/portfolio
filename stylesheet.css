@@ -1,0 +1,552 @@
+body {
+    margin:0;
+    padding:0;
+    background: rgb(255, 255, 255);
+    font-family: 'Bahnschrift','Segoe UI','Vladimir Script';
+}
+a{
+    text-decoration: none;
+    margin:0;
+    padding:0;
+}
+nav{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+img{
+    width: 100%;
+}
+:target::before {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 77px; /* fixed header height*/
+    margin: -60px 0 0; /* negative fixed header height */
+  }
+
+
+  .nav-container{
+    position: fixed;
+    background:rgb(255, 255, 255);
+    padding:10px;
+    width:100%;
+    top:0;
+    background: white;
+    z-index: 9;
+}
+.nav-container header{
+    display:flex;
+    padding:0;
+    position:relative;
+}
+.nav-container header .logo{
+    font-family: 'Vladimir Script';
+    font-size: 30pt;
+    color:black;
+    padding-top: 5pt;
+    margin-left:5pt;
+    visibility: hidden;
+}
+.nav-container header nav{
+}
+.nav-container header nav ul{
+    padding-top: 8vw;
+    padding-bottom: 2vw;
+    right:-100%;
+    display:none;
+}
+.nav-container header nav ul li{
+    width: 4cm;
+}
+.nav-container header nav ul li a{
+    font-family:'Bahnschrift';
+    font-weight: lighter;
+    font-size:12pt;
+    color: black;
+}
+.nav-container header nav ul li a:hover{
+    text-decoration:underline;
+}
+.social-header ul{
+    display:flex;
+    width:35pt;
+    float:right;
+    padding-top:5mm;
+    margin-left: 7cm ;
+    gap:3mm;
+    visibility:hidden;
+}
+.hamb{
+    position:absolute;
+    background: white;
+    border:hidden;
+    float:right;
+    top:0;
+    right: 5%;
+    cursor: pointer ;
+}
+.checkbt{
+    display: none;
+}
+#check:checked ~ ul{
+    display:block;
+}
+
+
+
+.boutme{
+    padding-top:100px;
+    margin:20px;
+    display:flex;
+}
+.boutme img{
+    max-width: 142px;
+    max-height: 207px;
+    margin-left: 20px;
+}
+
+.intro{
+    margin-left: 20pt;
+    margin-block-start: 0px;
+}
+.name{
+    font-family:'Vladimir Script';
+    font-size:54pt;
+    margin-block-start: 15px;
+    margin-block-end:-10px;
+}
+.introduction{
+    font-family: 'Bahnschrift';
+    font-size: 10pt;
+    font-weight:lighter;
+    padding-right: 10px;
+}
+.introduction:before{
+    content:'';
+    position:absolute;
+    width:99%;
+    padding-bottom: 50vw;
+    background: #bcd7ff;
+    z-index: -1;
+    right:-0.2vw;
+  }
+
+
+
+.accordion{
+    margin:1vw;
+    padding-top:80px;
+}
+.accordion img{
+    content:'';
+    max: height 60px;
+    max-width:51px;
+}
+
+.acc-header{
+    display:flex;
+    max-width:97vw;
+    max: height 4.5vw;
+    position:relative;
+    background:#bcd7ff;
+    cursor:pointer;    
+}
+.acc-header p{
+    margin-left: 2vw;
+    font-family: 'Bahnschrift';
+    font-size: 12pt;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.acc-header::before{
+    content:'+';
+    position:absolute;
+    top:35%;
+    right:30px;
+    size:4em;
+    color:#2699fb;
+}
+.acc-body{
+    background: #ffffff;
+    overflow: hidden;
+    transition: 0.4s;
+    height:0;
+    
+}
+.acc-header:hover {
+    background-color: #8ca5cb;
+  }
+.active .acc-body{
+    display:contents;
+    position:relative;
+    overflow:visible;
+}
+.active .acc-header::before {
+    content: '-';
+    font-size: 18px;
+    padding-bottom: 14pt;
+  }
+.acc-body h1{
+    font-family: "Segoe UI";
+    font-size: 13pt;
+    font-weight: bold;
+    border-bottom: #9eb4d6 solid;
+}
+.acc-body h2{
+    font-family: "Segoe UI";
+    font-size: 12pt;
+    font-weight: bold;
+}
+.acc-body h3{
+    font-family: "Segoe UI";
+    font-size: 11pt;
+    font-weight: lighter;
+    font-style: italic;
+}
+.acc-body p{
+    font-family: "Segoe UI";
+    font-size: 11pt;
+    font-weight: lighter;
+}
+
+
+
+.button-work img{
+    max: height 60px;
+    max-width:51px;
+}
+.button-work{
+    margin:1vw;
+    display:flex;
+    max-width:96.7vw;
+    max: height 10vw;
+    position:relative;
+    background:#bcd7ff;   
+}
+.button-work p{
+    margin-left: 2vw;
+    font-family: 'Bahnschrift';
+    font-size: 12pt;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color:black;
+}
+
+.portfolio{
+    height:658px;
+    display:grid;
+    place-items:center;
+    background:white;
+    gap: 6px;
+    width:100%;
+    padding-top:2vw;
+    padding-bottom: 20vw;
+}
+.item-portfolio{
+    background:#f1f9ff;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    position:relative;
+    align-items: center;
+}
+
+
+.item-portfolio:hover{
+    border: #8ca5cb solid;
+}
+
+.title{
+    background: #bcd7ff;
+    margin:6pt;
+    position:absolute;
+    bottom:0;
+    height:13vw;
+    width:97%;
+    padding-bottom: 15pt;
+}
+.title h1{
+    font-family: 'Segoe UI';
+    font-weight:700;
+    font-style:italic;
+    color:#707070;
+    font-size:13pt;
+    margin:5pt;
+}
+.title h2{
+    font-family: 'Bahnschrift';
+    font-weight:lighter;
+    color:#707070;
+    font-size:8pt;
+    margin:4pt;
+    padding-top:5pt;
+}
+
+
+
+.bottom-nav-container{
+    background: #bcd7ff;
+    width:100%;
+    height:48vw;
+    margin-top: 50pt;
+    justify-content: space-between;
+    position:absolute;
+    text-align: center;
+}
+.footer-logo{
+    font-family:'Vladimir Script';
+    font-size: 35pt;
+    color:black;
+    position:relative;
+    top:10%;
+}
+.footer-nav{
+    padding-top: 2vw;;
+    font-family: 'Bahnschrift';
+    font-weight:lighter;
+    font-size:10pt;
+    position: relative;
+    margin:6vw;
+}
+
+.footer-nav nav ul li a:hover{
+    text-decoration:underline;
+}
+.footer-nav nav ul li a{
+    color: black;
+}
+
+.contact-footer{
+    position:relative;
+    font-family: 'Bahnschrift';
+    font-weight:lighter;
+    font-size:10pt;
+    position: relative;
+}
+.contact-logo{
+    display:flex;
+    justify-content: space-between;
+    position:relative;
+    width:10%;
+    margin:auto;
+
+}
+.contact-logo li{
+    height:0.95em;
+    width:0.95em;
+}
+
+
+
+@media only screen and (min-width:1050px) {
+   
+    .boutme{
+        padding-top:90px;
+        margin:20px;
+        display:flex;
+    }
+    .boutme img{
+        max-width: 170.67px;
+        max-height: 240px;
+        margin-left: 20px;
+    }
+
+    .intro{
+        margin-left: 20pt;
+        margin-block-start: 20px;
+    }
+    .name{
+        font-family:'Vladimir Script';
+        font-size:59pt;
+        margin-block-start: 15px;
+        margin-block-end:-10px;
+    }
+    .introduction{
+        font-family: 'Bahnschrift';
+        font-size: 12pt;
+        font-weight:lighter;
+        padding-right: 10px;
+    }
+    .introduction:before{
+        content:'';
+        position:absolute;
+        width:97vw;
+        padding-bottom: 11vw;
+        background: #bcd7ff;
+        z-index: -1;
+        right:1vw;
+    }
+}
+
+@media only screen and (min-width:755px){
+    .nav-container{
+        position: fixed;
+        background:rgb(255, 255, 255);
+        padding:10px;
+        width:100%;
+        top:0;
+        background: white;
+        z-index: 9;
+    }
+    .nav-container header{
+        display:flex;
+        padding:0;
+    }
+    .nav-container header .logo{
+        font-family: 'Vladimir Script';
+        font-size: 30pt;
+        color:black;
+        padding-top: 5pt;
+        margin-left:5pt;
+        visibility: visible;
+    }
+    .nav-container header nav{
+        margin-left: 6.5cm;
+    }
+    .nav-container header nav ul{
+        display:flex;
+        padding:5mm;
+    }
+    .nav-container header nav ul li{
+        display:flex;
+        width: 4cm;
+    }
+    .nav-container header nav ul li a{
+        font-family:'Bahnschrift';
+        font-weight: lighter;
+        font-size:12pt;
+        color: black;
+        text-transform: uppercase;
+    }
+    
+    .nav-container header nav ul li a:hover{
+        text-decoration:underline;
+    }
+    .social-header ul{
+        display:flex;
+        width:35pt;
+        float:right;
+        padding-top:5mm;
+        margin-left: 7cm;
+        gap:3mm;
+        visibility: visible;
+    }
+    .hamb{
+        background: white;
+        border:hidden;
+        display:none;
+    }
+    .checkbt{
+        display: none;   
+    }
+    #check:checked ~ ul{
+        display:flex;
+    }
+
+    .acc-body h1{
+        font-family: "Segoe UI";
+        font-size: 13pt;
+        font-weight: bold;
+        border-bottom: #9eb4d6 solid;
+        width:80%;
+        margin-left:10%;
+        padding-top:20pt;
+    
+    }
+    .acc-body h2{
+        font-family: "Segoe UI";
+        font-size: 12pt;
+        font-weight: bold;
+        width:80%;
+        margin-left:10%;
+    }
+    .acc-body h3{
+        font-family: "Segoe UI";
+        font-size: 11pt;
+        font-weight: lighter;
+        font-style: italic;
+        width:80%;
+        margin-left:10%;
+    }
+    .acc-body p{
+        font-family: "Segoe UI";
+        font-size: 11pt;
+        font-weight: lighter;
+        width:80%;
+        margin-left:10%;
+    }
+    .portfolio{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,390px);
+        width:97%;
+        padding-left:1.5vw;
+    }
+    .portfolio :nth-child(1){
+        grid-column: span 2;
+    }
+    .portfolio :nth-child(4){
+        grid-column: span 2;
+    }
+
+
+    .bottom-nav-container{
+        display:flex;
+        background: #bcd7ff;
+        width:100%;
+        height:17vw;
+        margin-top: 50pt;
+        justify-content: space-between;
+        position:absolute;
+    }
+    .footer-logo{
+        font-family:'Vladimir Script';
+        font-size: 40pt;
+        color:black;
+        position:relative;
+        top:35%;
+        left:7%;
+    }
+    .footer-nav{
+        font-family: 'Bahnschrift';
+        font-weight:lighter;
+        font-size:11pt;
+        position: relative;
+        margin:3.5vw;
+        right:7%;
+        text-align:left;
+    }
+    
+    .footer-nav nav ul li a:hover{
+        text-decoration:underline;
+    }
+    .footer-nav nav ul li a{
+        color: black;
+        
+    }
+    
+    .contact-footer{
+        position:relative;
+        font-family: 'Bahnschrift';
+        font-weight:lighter;
+        font-size:12pt;
+        position: relative;
+        margin:5.5vw;
+        right:15%;
+    
+    }
+    .contact-logo{
+        display:flex;
+        justify-content: space-between;
+        gap:3mm;
+        position:relative;
+        width:2cm;
+    }
+      
+}
+
+
