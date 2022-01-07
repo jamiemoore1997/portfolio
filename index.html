@@ -2,23 +2,22 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <meta name="viewport" content="width=1920px, initial-scale-1.0">
     <title>My Page</title>
     <link rel="stylesheet" href="homeweb.css">
     <link rel="shortcut icon" type="image/png" href="../favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/dbd8grl.css">
     <title>My Page</title>
-    <style>body {
-        margin:0 auto;
-        padding:0;
-        background: rgb(255, 255, 255);
-        font-family: 'Open Sans','Open Sans', san-serif,'la-bohemienne', san-serif;
-    }
+    <style>body{margin:0 auto;
+    padding:0;
+    background: rgb(255, 255, 255);
+    font-family: 'Open Sans','Open Sans', san-serif,'la-bohemienne', san-serif;
+}
 a{
     text-decoration: none;
     margin:0;
-    padding:0;
+    padding:0;  
 }
 nav{
     margin:0;
@@ -38,7 +37,8 @@ img{
     visibility: hidden;
     height: 77px; /* fixed header height*/
     margin: -60px 0 0; /* negative fixed header height */
-    }
+}
+
 
 
 .nav-container{
@@ -48,12 +48,11 @@ img{
     width:100%;
     top:0;
     background: white;
-    z-index: 9;
+    z-index: 1;
 }
 .nav-container header{
     display:flex;
     padding:0;
-    position:relative;
 }
 .nav-container header .logo{
     font-family: 'la-bohemienne', san-serif;
@@ -61,17 +60,17 @@ img{
     color:black;
     padding-top: 5pt;
     margin-left:5pt;
-    visibility: hidden;
+    visibility: visible;
 }
 .nav-container header nav{
+    margin-left: 6.5cm;
 }
 .nav-container header nav ul{
-    padding-top: 8vw;
-    padding-bottom: 2vw;
-    right:-100%;
-    display:none;
+    display:flex;
+    padding:5mm;
 }
 .nav-container header nav ul li{
+    display:flex;
     width: 4cm;
 }
 .nav-container header nav ul li a{
@@ -79,6 +78,7 @@ img{
     font-weight: lighter;
     font-size:12pt;
     color: black;
+    text-transform: uppercase;
 }
 .nav-container header nav ul li a:hover{
     text-decoration:underline;
@@ -88,25 +88,23 @@ img{
     width:35pt;
     float:right;
     padding-top:5mm;
-    margin-left: 7cm ;
+    margin-left: 7cm;
     gap:3mm;
-    visibility:hidden;
+    visibility: visible;
 }
 .hamb{
-    position:absolute;
     background: white;
     border:hidden;
-    float:right;
-    top:0;
-    right: 5%;
-    cursor: pointer ;
+    display:none;
 }
 .checkbt{
-    display: none;
+    display: none;   
 }
 #check:checked ~ ul{
-    display:block;
+    display:flex;
 }
+
+
 
 
 
@@ -141,12 +139,14 @@ img{
 .introduction:before{
     content:'';
     position:absolute;
-    width:99%;
-    padding-bottom: 50vw;
+    width:98%;
+    padding-bottom: 8vw;
     background: #bcd7ff;
     z-index: -1;
-    right:-0.2vw;
+    right:1vw;
     }
+
+
 
 
 
@@ -159,7 +159,6 @@ img{
     max: height 60px;
     max-width:51px;
 }
-
 .acc-header{
     display:flex;
     max-width:97vw;
@@ -187,8 +186,7 @@ img{
     background: #ffffff;
     overflow: hidden;
     transition: 0.4s;
-    height:0;
-    
+    height:0;   
 }
 .acc-header:hover {
     background-color: #8ca5cb;
@@ -204,39 +202,47 @@ img{
     padding-bottom: 14pt;
     }
 .acc-body h1{
-    font-family: "Segoe UI";
+    font-family: "Open Sans";
     font-size: 13pt;
     font-weight: bold;
     border-bottom: #9eb4d6 solid;
+    width:80%;
+    margin-left:10%;
+    padding-top:20pt;
 }
 .acc-body h2{
-    font-family: "Segoe UI";
+    font-family: "Open Sans";
     font-size: 12pt;
     font-weight: bold;
+    width:80%;
+    margin-left:10%;
 }
 .acc-body h3{
-    font-family: "Segoe UI";
+    font-family: "Open Sans";
     font-size: 11pt;
     font-weight: lighter;
     font-style: italic;
+    width:80%;
+    margin-left:10%;
 }
 .acc-body p{
-    font-family: "Segoe UI";
-    font-size: 11pt;
+    font-family: "Open Sans";
+    font-size: 8pt;
     font-weight: lighter;
+    width:80%;
+    margin-left:10%;
 }
+
 
 
 
 .button-work img{
-    max: height 60px;
     max-width:51px;
 }
 .button-work{
     margin:1vw;
     display:flex;
     max-width:96.7vw;
-    max: height 10vw;
     position:relative;
     background:#bcd7ff;   
 }
@@ -267,19 +273,28 @@ img{
     position:relative;
     align-items: center;
 }
-
-
 .item-portfolio:hover{
     border: #8ca5cb solid;
 }
-
+.portfolio{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,390px);
+    width:97%;
+    padding-left:1.5vw;
+}
+.portfolio :nth-child(1){
+    grid-column: span 2;
+}
+.portfolio :nth-child(4){
+    grid-column: span 2;
+}
 .title{
     background: #bcd7ff;
     margin:6pt;
     position:absolute;
     bottom:0;
-    height:13vw;
-    width:97%;
+    height:9vw;
+    width:90%;
     padding-bottom: 15pt;
 }
 .title h1{
@@ -301,29 +316,33 @@ img{
 
 
 
+
+
 .bottom-nav-container{
+    display:flex;
     background: #bcd7ff;
     width:100%;
-    height:48vw;
+    height:17vw;
     margin-top: 50pt;
     justify-content: space-between;
     position:absolute;
-    text-align: center;
 }
 .footer-logo{
     font-family:'la-bohemienne', san-serif;
-    font-size: 35pt;
+    font-size: 40pt;
     color:black;
     position:relative;
-    top:10%;
+    top:35%;
+    left:7%;
 }
 .footer-nav{
-    padding-top: 2vw;;
     font-family: 'Open Sans';
     font-weight:lighter;
-    font-size:10pt;
+    font-size:11pt;
     position: relative;
-    margin:6vw;
+    margin:5vw;
+    right:7%;
+    text-align:left;
 }
 
 .footer-nav nav ul li a:hover{
@@ -331,244 +350,353 @@ img{
 }
 .footer-nav nav ul li a{
     color: black;
+    
 }
-
 .contact-footer{
     position:relative;
     font-family: 'Open Sans';
     font-weight:lighter;
-    font-size:10pt;
+    font-size:12pt;
     position: relative;
+    margin:5.5vw;
+    right:15%;
+
 }
 .contact-logo{
     display:flex;
     justify-content: space-between;
+    gap:3mm;
     position:relative;
-    width:10%;
-    margin:auto;
-
+    width:2cm;
 }
-.contact-logo li{
-    height:0.95em;
-    width:0.95em;
-}
-
-
-
-@media only screen and (min-width:1050px) {
-    .body{
-        margin:0 auto;
-        max-width: 1920px;
-        align-content: center;
-    }
-    .boutme{
-        padding-top:90px;
-        margin:20px;
-        display:flex;
-    }
-    .boutme img{
-        max-width: 170.67px;
-        max-height: 240px;
-        margin-left: 20px;
-    }
-    .intro{
-        margin-left: 20pt;
-        margin-block-start: 20px;
-    }
-    .name{
-        font-family:'la-bohemienne', san-serif;
-        font-size:59pt;
-        margin-block-start: 15px;
-        margin-block-end:-10px;
-    }
-    .introduction{
-        font-family: 'Open Sans';
-        font-size: 12pt;
-        font-weight:lighter;
-        padding-right: 10px;
-    }
-    .introduction:before{
-        content:'';
-        position:absolute;
-        width:97vw;
-        padding-bottom: 11vw;
-        background: #bcd7ff;
-        z-index: -1;
-        right:1vw;
-    }
-}
-
-@media only screen and (min-width:755px){
-    .body{
-        margin:0 auto;
-        width: 1920px;
-        align-content: center;
-    }
+    
+@media only screen and (max-width:459px) and (min-width:375px){
     .nav-container{
-        position: fixed;
-        background:rgb(255, 255, 255);
-        padding:10px;
-        width:100%;
-        top:0;
-        background: white;
-        z-index: 1;
-    }
+        padding:1px;
+       }
     .nav-container header{
         display:flex;
         padding:0;
+        position:relative;
     }
     .nav-container header .logo{
-        font-family: 'la-bohemienne', san-serif;
-        font-size: 30pt;
-        color:black;
-        padding-top: 5pt;
-        margin-left:5pt;
-        visibility: visible;
-    }
-    .nav-container header nav{
-        margin-left: 6.5cm;
+        visibility: hidden;
     }
     .nav-container header nav ul{
-        display:flex;
-        padding:5mm;
+        display:none;
     }
     .nav-container header nav ul li{
-        display:flex;
-        width: 4cm;
+        
     }
     .nav-container header nav ul li a{
         font-family:'Open Sans';
         font-weight: lighter;
-        font-size:12pt;
+        font-size:10pt;
         color: black;
-        text-transform: uppercase;
+        margin-left:10;
     }
-    
     .nav-container header nav ul li a:hover{
         text-decoration:underline;
     }
     .social-header ul{
-        display:flex;
-        width:35pt;
-        float:right;
-        padding-top:5mm;
-        margin-left: 7cm;
-        gap:3mm;
-        visibility: visible;
+        visibility:hidden;
     }
     .hamb{
+        position:absolute;
         background: white;
         border:hidden;
-        display:none;
+        float:right;
+        top:5%;
+        right: 3%;
+        cursor: pointer;
+        display:block ;
     }
     .checkbt{
-        display: none;   
+        display: none;
     }
     #check:checked ~ ul{
-        display:flex;
+        display:inline-block;
+        padding-top:15vw;
+        padding-bottom:5vw;
+        margin-left:-60vw;
     }
 
+
+
+
+    .boutme img{
+        max-width: 120px;
+        max-height: 150px;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+    
+    .intro{
+        margin-left: 10pt;
+        margin-block-start: 0px;
+    }
+    .name{
+        font-size:30pt;
+    }
+    .introduction{
+        font-family: 'Open Sans';
+        font-size: 6pt;
+        font-weight:lighter;
+        padding-right: 10px;
+    }
+    .introduction:before{
+    content:'';
+    position:absolute;
+    width:98%;
+    padding-bottom: 35vw;
+    background: #bcd7ff;
+    z-index: -1;
+    right:1vw;
+    }
+
+
+
+
+    .accordion{
+        margin:1vw;
+        padding-top:40px;
+    }
+
+    .acc-header p{
+        margin-left: 2vw;
+        font-family: 'Open Sans';
+        font-size: 10pt;
+        font-weight: lighter;
+        text-transform: uppercase;
+    }
+    .acc-header img{
+        max-width: 26px;
+        max-height: 26px;
+        padding-top:8px;
+        margin-left:4px;
+    }
     .acc-body h1{
         font-family: "Open Sans";
-        font-size: 13pt;
+        font-size: 11pt;
         font-weight: bold;
         border-bottom: #9eb4d6 solid;
-        width:80%;
-        margin-left:10%;
-        padding-top:20pt;
-    
+        width:100%;
+        margin-left:0%;
     }
     .acc-body h2{
         font-family: "Open Sans";
-        font-size: 12pt;
+        font-size: 10pt;
         font-weight: bold;
-        width:80%;
-        margin-left:10%;
+        width:100%;
+        margin-left:0%;
     }
     .acc-body h3{
         font-family: "Open Sans";
-        font-size: 11pt;
+        font-size: 9pt;
         font-weight: lighter;
         font-style: italic;
-        width:80%;
-        margin-left:10%;
+        width:100%;
+        margin-left:0%;
     }
     .acc-body p{
         font-family: "Open Sans";
-        font-size: 11pt;
+        font-size: 8pt;
         font-weight: lighter;
-        width:80%;
-        margin-left:10%;
+        width:100%;
+        margin-left:0%;
     }
+    
+
+
+
+
+    .button-work img{
+        max-width: 26px;
+        max-height: 26px;
+        padding-top:8px;
+        margin-left:4px;
+    }
+    .button-work{
+        margin:1vw;
+        display:flex;
+        max-width:96.7vw;
+        max: height 10vw;
+        position:relative;
+        background:#bcd7ff;   
+    }
+    .button-work p{
+        font-size: 10pt;
+    }
+    
     .portfolio{
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,390px);
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,180px);
         width:97%;
         padding-left:1.5vw;
     }
     .portfolio :nth-child(1){
-        grid-column: span 2;
+        grid-column: span 1;
     }
     .portfolio :nth-child(4){
-        grid-column: span 2;
+        grid-column: span 1;
     }
+    .item-portfolio{
+        background:#f1f9ff;
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        position:relative;
+        align-items: center;
+    }
+    
+    .item-portfolio:hover{
+        border: #8ca5cb solid;
+    }
+    .title{
+        background: #bcd7ff;
+        margin:6pt;
+        position:absolute;
+        bottom:0;
+        height:15vw;
+        width:95%;
+        padding-bottom: 15pt;
+    }
+    .title h1{
+        font-family: 'Open Sans', san-serif;
+        font-weight:700;
+        font-style:italic;
+        color:#707070;
+        font-size:10pt;
+        margin:5pt;
+    }
+    .title h2{
+        font-family: 'Open Sans';
+        font-weight:lighter;
+        color:#707070;
+        font-size:6pt;
+        margin:4pt;
+        padding-top:5pt;
+    }
+
+
 
 
     .bottom-nav-container{
-        display:flex;
+        display:block;
         background: #bcd7ff;
         width:100%;
-        height:17vw;
+        height:60vw;
         margin-top: 50pt;
         justify-content: space-between;
         position:absolute;
     }
     .footer-logo{
         font-family:'la-bohemienne', san-serif;
-        font-size: 40pt;
+        font-size: 25pt;
         color:black;
         position:relative;
-        top:35%;
-        left:7%;
+        top:5%;
+        left:40%;
     }
     .footer-nav{
         font-family: 'Open Sans';
         font-weight:lighter;
-        font-size:11pt;
+        font-size:8pt;
         position: relative;
         margin:3.5vw;
-        right:7%;
-        text-align:left;
+        left:-2%;
+        text-align:center;
     }
     
-    .footer-nav nav ul li a:hover{
-        text-decoration:underline;
-    }
-    .footer-nav nav ul li a{
-        color: black;
-        
-    }
-    
+   
     .contact-footer{
-        position:relative;
-        font-family: 'Open Sans';
-        font-weight:lighter;
-        font-size:12pt;
-        position: relative;
-        margin:5.5vw;
-        right:15%;
-    
+        font-size:8pt;
+        right:2%;
+        text-align: center;
+         
     }
     .contact-logo{
+        margin: 0 auto;
+    }
+}
+
+
+@media all and (max-width:1120px) and (min-width:555px){
+    .nav-container{
+        padding:1px;
+       }
+    .nav-container header{
         display:flex;
-        justify-content: space-between;
-        gap:3mm;
+        padding:0;
         position:relative;
-        width:2cm;
+    }
+    .nav-container header .logo{
+        visibility: hidden;
+    }
+    .nav-container header nav ul{
+        display:none;
+    }
+    .nav-container header nav ul li{
+        
+    }
+    .nav-container header nav ul li a{
+        font-family:'Open Sans';
+        font-weight: lighter;
+        font-size:10pt;
+        color: black;
+        margin-left:10;
+    }
+    .nav-container header nav ul li a:hover{
+        text-decoration:underline;
+    }
+    .social-header ul{
+        visibility:hidden;
+    }
+    .hamb{
+        position:absolute;
+        background: white;
+        border:hidden;
+        float:right;
+        top:5%;
+        right: 3%;
+        cursor: pointer;
+        display:block ;
+    }
+    .checkbt{
+        display: none;
+    }
+    #check:checked ~ ul{
+        display:inline-block;
+        padding-top:15vw;
+        padding-bottom:5vw;
+        margin-left:-60vw;
     }
 
-@media only screen and (max-width:414px) {
-}</style>
+
+    
+    .intro{
+        margin-left: 10pt;
+        margin-block-start: 0px;
+    }
+    .name{
+        font-size:30pt;
+    }
+    .introduction{
+        font-family: 'Open Sans';
+        font-size: 8pt;
+        font-weight:lighter;
+        padding-right: 10px;
+    }
+    .introduction:before{
+    content:'';
+    position:absolute;
+    width:98%;
+    padding-bottom: 16vw;
+    background: #bcd7ff;
+    z-index: -1;
+    right:1vw;
+    }
+</style>
     <link rel="shortcut icon" type="image/png" href="../favicon.png">
 </head>
 <body>
