@@ -705,7 +705,7 @@ img{
     z-index: -1;
     right:1vw;
     }
-<style>
+</style>
 <body>
 
     <div class="nav-container">
@@ -918,6 +918,14 @@ img{
             </div>
         </div>
     </div>
-<script src="homeweb.js" type="text/javascript"></script>
+<script>
+var acc = document.getElementsByClassName("accordion-item");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    })
+};</script>
 </body>
 </html>
