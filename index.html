@@ -2,14 +2,15 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta name="viewport" content="device-width=1920px, initial-scale-1.0">
     <title>My Page</title>
-    <link rel="stylesheet" href="homeweb.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" type="image/png" href="../favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/dbd8grl.css">
-    <title>My Page</title>
-    <style>body{margin:0 auto;
+</head>
+<style>
+    body{margin:0 auto;
     padding:0;
     background: rgb(255, 255, 255);
     font-family: 'Open Sans','Open Sans', san-serif,'la-bohemienne', san-serif;
@@ -56,10 +57,10 @@ img{
    
 }
 .nav-container header{
-    width:1380px;
     display:flex;
     padding:0;
     margin:0 auto;
+    width:1360px
 }
 .nav-container header .logo{
     font-family: 'la-bohemienne', san-serif;
@@ -134,14 +135,14 @@ img{
 .name{
     font-family:'la-bohemienne', san-serif;
     font-weight: 580;
-    font-size:54pt;
+    font-size:57pt;
     margin-block-start: 15px;
     margin-block-end:-10px;
 }
 .introduction{
     width:90%;
     font-family: 'Open Sans';
-    font-size: 10pt;
+    font-size: 12pt;
     font-weight:lighter;
     padding-right: 10px;
 }
@@ -208,12 +209,12 @@ img{
 }
 .active .acc-header::before {
     content: '-';
-    font-size: 18px;
+    font-size: 17pt;
     padding-bottom: 14pt;
     }
 .acc-body h1{
     font-family: "Open Sans";
-    font-size: 13pt;
+    font-size: 16pt;
     font-weight: bold;
     border-bottom: #9eb4d6 solid;
     width:80%;
@@ -222,14 +223,14 @@ img{
 }
 .acc-body h2{
     font-family: "Open Sans";
-    font-size: 12pt;
+    font-size: 15pt;
     font-weight: bold;
     width:80%;
     margin-left:10%;
 }
 .acc-body h3{
     font-family: "Open Sans";
-    font-size: 11pt;
+    font-size: 14pt;
     font-weight: lighter;
     font-style: italic;
     width:80%;
@@ -237,7 +238,7 @@ img{
 }
 .acc-body p{
     font-family: "Open Sans";
-    font-size: 8pt;
+    font-size: 13pt;
     font-weight: lighter;
     width:80%;
     margin-left:10%;
@@ -266,7 +267,7 @@ img{
 }
 
 .portfolio{
-    height:658px;
+    height:780px;
     width:1380px;
     margin: 0 auto;
     display:grid;
@@ -327,28 +328,29 @@ img{
 
 
 .bottom-nav-container{
-    display:flex;
     background: #bcd7ff;
     width:100vw;
-    height:17vw;
+    height:300px;
     justify-content: space-between;
-    position:absolute;
+}
+.bottom-nav{
+    display:flex;
+    width:1360px;
+    margin:0 auto;
 }
 .footer-logo{
     font-family:'la-bohemienne', san-serif;
     font-size: 40pt;
     color:black;
     position:relative;
-    top:35%;
-    left:7%;
+    margin:100px;
 }
 .footer-nav{
     font-family: 'Open Sans';
     font-weight:lighter;
     font-size:11pt;
     position: relative;
-    margin:5vw;
-    right:7%;
+    margin:100px;
     text-align:left;
 }
 
@@ -365,8 +367,8 @@ img{
     font-weight:lighter;
     font-size:12pt;
     position: relative;
-    margin:5.5vw;
-    right:15%;
+    margin: 100px;
+    padding-left: 200px;
 
 }
 .contact-logo{
@@ -703,11 +705,7 @@ img{
     z-index: -1;
     right:1vw;
     }
-
-
-</style>
-    <link rel="shortcut icon" type="image/png" href="../favicon.png">
-</head>
+<style>
 <body>
 
     <div class="nav-container">
@@ -731,200 +729,195 @@ img{
             </div>
         </header>
     </div>
-
-    <div class="boutme">
-        <img src="../profile.jpg" alt="profile" class="left-col">
-        <div class="intro">
-            <p class="name">Kat Huynh</p>
-            <p class="introduction"> <br> I am a work enthusiast and an eager learner who is experienced in Data, Business Analysis and Machine Learning Engineering.
-                I work with Python, R, JavaScript, HTML, DJango, Advanced 365 Microsoft and extensively with SQL databases. Nonetheless, I am well-versed on empirical data and statistical models which I learnt from my previous research works. My past study in Finance also enhanced my knowledge in Investment Analysis and Risk Modelling across Vietnam, Singapore, Dubai-UAE and Australia.</p>
-        </div>
-    </div>
-
-    <div  class="details">
-       <div class="accordion">
-           <div id='exp' class="accordion-item">
-               <div class="acc-header">
-                   <img  src="../experience.png" alt="briefcase">
-                   <p>Experiences</p>
-                </div>
-               <div  class="acc-body">
-                <h1>PROJECT AND DATA INTERN| FINQQUEST CO.-SINGAPORE</h1>
-
-                <h2>Key Responsibilities:</h2>
-                <h3>Administrative Tasks</h3> 
-                <p> Work with Microsoft Project Professional  for new merger projects<br>
-                    Working as an intermediary of M&A businesses<br>
-                    Selling M&A services<br>
-                    Handling phone calls with potential partners clients<br> 
-                    Scheduling meetings, appointments<br>
-                    Data record and management<br>
-                </p>    
-                <h3>Business Analytic Tasks</h3> 
-                <p> Data migration<br>
-                    Technical and Quality Testing using Power BI Reports<br>
-                    SQL Server data verification<br>
-                    Bugs Tracking and Source Control<br>
-                    Reverse Engineering Data Models and Business Logic for high value Financial and Operational Analytics.<br>
-                    Financial and Statistical Analysis<br>
-                </p>        
-                <h1>FINANCE AND ACCOUNTING INTERN| TECS-TAN SON NHAT AIRPORT-HO CHI MINH CITY</h1>    
-                    
-                <h2>Key Responsibilities:</h2>
-                <h3>Administrative Tasks</h3>
-                <p> Work with Microsoft 365 Records and SharePoint<br> 
-                    Assist the execution of every steps of a project cycle<br> 
-                    Consult the management on the projects<br>
-                    Administrative tasks like data entry, email correspondences, … etc<br>
-                    Keep track of imports and exports  records<br>
-                </p>       
-                <h3>Accounting Tasks</h3>  
-                <p> Cash and Payables Accounting<br>
-                    Taxation and Pay Roll<br>
-                    Generate Quarterly Reports<br>
-                </p>    
-                <h2>Achievements:</h2>
-                <p> First intern to complete the program.<br>
-                </p>
-                <h1>TAX CONSULTANT| PLANETECH ACCOUNTANT CO.-SYDNEY</h1>
-                    
-                <h2>Key Responsibilities:</h2>
-                <p>
-                    Individual Tax Consulting<br>
-                    Income Tax Processing <br>
-                    Daily On phone Tax Consulting<br>
-                    Data Entry and Management of the CRM software<br>
-                </p>
-                <h2>Extra Duties:</h2> 
-                <p>Accounting duties: Payable/Receivable, cash accounting,…</p>    
-                <h2>Achievements:</h2>
-                <p>
-                    Handling 600 out of 2000 total cases from May<br>
-                    Highest approved case rate among peers<br>
-                </p>    
-                <h1>FUNDRAISER|UNICEF-SYDNEY</h1> 
-                    
-                <h2>Key Responsibilities:</h2>
-                <p>
-                    Organize activities to raise funds or otherwise solicit and gather monetary donations or other gifts for UNICEF <br>
-                    Design and produce promotional materials. <br>
-                    Raise awareness of the UNICEF's work, goals, and financial needs.<br>
-                    Event Planning and organization<br>
-                </p>
-                </div>
-           </div>
-     
-           <div id='skills'class="accordion-item">
-                <div class="acc-header">
-                        <img  src="../skills.png" alt="brain">
-                        <p>SKILLS</p>
-                </div>
-                <div class="acc-body">
-                    <h1>PROGRAMMING LANGUAGES</h1>
-                    <p>
-                    Python <br>
-                    R<br>
-                    SQL <br>
-                    JavaScript<br>
-                    HTML and CSS<br>
-                    </p>    
-                    <h1>MICROSOFT 365</h1>
-                    <P>
-                    Advanced usage of all essential Microsoft Office software <br>
-                    </p>
-                    <h1>RESEARCH SKILLS</h1>
-                    <P>
-                    Advanced statistical methodologies<br>
-                    Perform primary and secondary research.<br>
-                    Information analysis<br>
-                    Experience with many different research project: Regional Immersion Project, YRCSRLA competition.<br>
-                    </p>
-                    <h1>FINANCE AND ACCOUNTING</h1>
-                    <P>
-                    Bachelor in Finance<br>
-                    CFA level 1 Candidate- Exam due May 2022<br>
-                    General Accounting duties <br>
-                    </p>
-                    <h1>DATA VISUALIZATION AND ARTIFICIAL INTELLIGENCE</h1>
-                    <p>
-                    Data EDA and Analysis<br>
-                    Machine Learning and Deep Learning<br>
-                    </p>
-                    <h1>DATABASE MANGEMENT SYSTEM</h1>
-                    <p>
-                    Use DDL and DML for data extraction<br>
-                    Construction of the database management system<br>
-                    </p>
-                </div>
+    <div class="content">
+        <div class="boutme">
+            <img src="../profile.jpg" alt="profile" class="left-col">
+            <div class="intro">
+                <p class="name">Kat Huynh</p>
+                <p class="introduction"> <br> I am a work enthusiast and an eager learner who is experienced in Data, Business Analysis and Machine Learning Engineering.
+                    I work with Python, R, JavaScript, HTML, DJango, Advanced 365 Microsoft and extensively with SQL databases. Nonetheless, I am well-versed on empirical data and statistical models which I learnt from my previous research works. My past study in Finance also enhanced my knowledge in Investment Analysis and Risk Modelling across Vietnam, Singapore, Dubai-UAE and Australia.</p>
             </div>
-  
         </div>
-        <div id='works' class="works">
-            <a href="#" class="button-work">
-                <img src="../work.png" alt="screw">
-                <p>MY WORKS</p>
-            </a>
-            <div class="portfolio">
-                <a href="https://github.com/jamiemoore1997/Bank-Stock-Selection-Based-on-LASSO-VAR.git" class="item-portfolio">
-                    <div class="title">
-                    <h1>Bank Stock Selection based on LASSO-VAR</h1>
-                    <h2>Data Analysis and Machine Learning</h2>
-                    </div>    
-                </a>
-                <a href="https://github.com/jamiemoore1997/DBMS-System-For-FedEx-Vietnam.git" class="item-portfolio">
-                    <div class="title">
-                    <h1>Database Management System for FedEx-Vietnam</h1>
-                    <h2>Data Analysis<br>DBMS</h2>
+
+        <div  class="details">
+        <div class="accordion">
+            <div id='exp' class="accordion-item">
+                <div class="acc-header">
+                    <img  src="../experience.png" alt="briefcase">
+                    <p>Experiences</p>
                     </div>
-                </a>
-                <a href="https://github.com/jamiemoore1997/Financial-Risk-Modelling" class="item-portfolio">
-                    <div class="title">
-                    <h1>Financial Risk Modelling</h1>
-                    <h2>Finance&Accounting</h2>
+                <div  class="acc-body">
+                    <h1>PROJECT AND DATA INTERN| FINQQUEST CO.-SINGAPORE</h1>
+
+                    <h2>Key Responsibilities:</h2>
+                    <h3>Administrative Tasks</h3> 
+                    <p> Work with Microsoft Project Professional  for new merger projects<br>
+                        Working as an intermediary of M&A businesses<br>
+                        Selling M&A services<br>
+                        Handling phone calls with potential partners clients<br> 
+                        Scheduling meetings, appointments<br>
+                        Data record and management<br>
+                    </p>    
+                    <h3>Business Analytic Tasks</h3> 
+                    <p> Data migration<br>
+                        Technical and Quality Testing using Power BI Reports<br>
+                        SQL Server data verification<br>
+                        Bugs Tracking and Source Control<br>
+                        Reverse Engineering Data Models and Business Logic for high value Financial and Operational Analytics.<br>
+                        Financial and Statistical Analysis<br>
+                    </p>        
+                    <h1>FINANCE AND ACCOUNTING INTERN| TECS-TAN SON NHAT AIRPORT-HO CHI MINH CITY</h1>    
+                        
+                    <h2>Key Responsibilities:</h2>
+                    <h3>Administrative Tasks</h3>
+                    <p> Work with Microsoft 365 Records and SharePoint<br> 
+                        Assist the execution of every steps of a project cycle<br> 
+                        Consult the management on the projects<br>
+                        Administrative tasks like data entry, email correspondences, … etc<br>
+                        Keep track of imports and exports  records<br>
+                    </p>       
+                    <h3>Accounting Tasks</h3>  
+                    <p> Cash and Payables Accounting<br>
+                        Taxation and Pay Roll<br>
+                        Generate Quarterly Reports<br>
+                    </p>    
+                    <h2>Achievements:</h2>
+                    <p> First intern to complete the program.<br>
+                    </p>
+                    <h1>TAX CONSULTANT| PLANETECH ACCOUNTANT CO.-SYDNEY</h1>
+                        
+                    <h2>Key Responsibilities:</h2>
+                    <p>
+                        Individual Tax Consulting<br>
+                        Income Tax Processing <br>
+                        Daily On phone Tax Consulting<br>
+                        Data Entry and Management of the CRM software<br>
+                    </p>
+                    <h2>Extra Duties:</h2> 
+                    <p>Accounting duties: Payable/Receivable, cash accounting,…</p>    
+                    <h2>Achievements:</h2>
+                    <p>
+                        Handling 600 out of 2000 total cases from May<br>
+                        Highest approved case rate among peers<br>
+                    </p>    
+                    <h1>FUNDRAISER|UNICEF-SYDNEY</h1> 
+                        
+                    <h2>Key Responsibilities:</h2>
+                    <p>
+                        Organize activities to raise funds or otherwise solicit and gather monetary donations or other gifts for UNICEF <br>
+                        Design and produce promotional materials. <br>
+                        Raise awareness of the UNICEF's work, goals, and financial needs.<br>
+                        Event Planning and organization<br>
+                    </p>
                     </div>
-                </a>
-                <a href="https://github.com/jamiemoore1997/Personal-Finance-Dashboard.git" class="item-portfolio">
-                    <div class="title">
-                    <h1>Personal Finance Dashboard</h1>
-                    <h2>Finance&Accounting<br>Data Analysis<br>Application Developement</h2>
-                    </div>    
-                </a>  
-            </div>                                               
-        </div>
-    </div>
-    
-    <div id='bottom-nav-container' class="bottom-nav-container">
-        <div class="footer-logo">KH</div>
-        <div class="footer-nav">    
-            <nav>
-                <ul>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#exp">Experiences</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#works">My works</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="contact-footer">
-            <ul>
-                <div class="per-details">    
-                    jamiemoore1997@gmail.com<br>+65415138532
+            </div>
+            <br>
+            <div id='skills'class="accordion-item">
+                    <div class="acc-header">
+                            <img  src="../skills.png" alt="brain">
+                            <p>SKILLS</p>
+                    </div>
+                    <div class="acc-body">
+                        <h1>PROGRAMMING LANGUAGES</h1>
+                        <p>
+                        Python <br>
+                        R<br>
+                        SQL <br>
+                        JavaScript<br>
+                        HTML and CSS<br>
+                        </p>    
+                        <h1>MICROSOFT 365</h1>
+                        <P>
+                        Advanced usage of all essential Microsoft Office software <br>
+                        </p>
+                        <h1>RESEARCH SKILLS</h1>
+                        <P>
+                        Advanced statistical methodologies<br>
+                        Perform primary and secondary research.<br>
+                        Information analysis<br>
+                        Experience with many different research project: Regional Immersion Project, YRCSRLA competition.<br>
+                        </p>
+                        <h1>FINANCE AND ACCOUNTING</h1>
+                        <P>
+                        Bachelor in Finance<br>
+                        CFA level 1 Candidate- Exam due May 2022<br>
+                        General Accounting duties <br>
+                        </p>
+                        <h1>DATA VISUALIZATION AND ARTIFICIAL INTELLIGENCE</h1>
+                        <p>
+                        Data EDA and Analysis<br>
+                        Machine Learning and Deep Learning<br>
+                        </p>
+                        <h1>DATABASE MANGEMENT SYSTEM</h1>
+                        <p>
+                        Use DDL and DML for data extraction<br>
+                        Construction of the database management system<br>
+                        </p>
+                    </div>
                 </div>
-                <div class="contact-logo">
-                    <li><a href="https://www.linkedin.com/in/kat-gia-bao-ngoc-huynh/"><img src="../linkin.png" alt="linkin"></a></li>
-                    <li><a href="mailto:jamiemoore1997@gmail.com"><img src="../mail.png" alt="mail"></a></li>
-                    <li><a href="tel:0415138532"><img src="../call.png" alt="call" ></a></li>
-                </div>        
-            </ul>
+            <br>
+            </div>
+            <div id='works' class="works">
+                <a href="#" class="button-work">
+                    <img src="../work.png" alt="screw">
+                    <p>MY WORKS</p>
+                </a>
+                <div class="portfolio">
+                    <a href="https://github.com/jamiemoore1997/Bank-Stock-Selection-Based-on-LASSO-VAR.git" class="item-portfolio">
+                        <div class="title">
+                        <h1>Bank Stock Selection based on LASSO-VAR</h1>
+                        <h2>Data Analysis and Machine Learning</h2>
+                        </div>    
+                    </a>
+                    <a href="https://github.com/jamiemoore1997/DBMS-System-For-FedEx-Vietnam.git" class="item-portfolio">
+                        <div class="title">
+                        <h1>Database Management System for FedEx-Vietnam</h1>
+                        <h2>Data Analysis<br>DBMS</h2>
+                        </div>
+                    </a>
+                    <a href="https://github.com/jamiemoore1997/Financial-Risk-Modelling" class="item-portfolio">
+                        <div class="title">
+                        <h1>Financial Risk Modelling</h1>
+                        <h2>Finance&Accounting</h2>
+                        </div>
+                    </a>
+                    <a href="https://github.com/jamiemoore1997/Personal-Finance-Dashboard.git" class="item-portfolio">
+                        <div class="title">
+                        <h1>Personal Finance Dashboard</h1>
+                        <h2>Finance&Accounting<br>Data Analysis<br>Application Developement</h2>
+                        </div>    
+                    </a>  
+                </div>                                               
+            </div>
         </div>
     </div>
-<script>var acc = document.getElementsByClassName("accordion-item");
-    var i;
-    
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        })
-    };</script>
+    <div class="bottom-nav-container">
+        <div id='bottom-nav-container' class="bottom-nav">
+            <div class="footer-logo">KH</div>
+            <div class="footer-nav">    
+                <nav>
+                    <ul>
+                        <li><a href="#">About me</a></li>
+                        <li><a href="#exp">Experiences</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#works">My works</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="contact-footer">
+                <ul>
+                    <div class="per-details">    
+                        jamiemoore1997@gmail.com<br>+65415138532
+                    </div>
+                    <div class="contact-logo">
+                        <li><a href="https://www.linkedin.com/in/kat-gia-bao-ngoc-huynh/"><img src="../linkin.png" alt="linkin"></a></li>
+                        <li><a href="mailto:jamiemoore1997@gmail.com"><img src="../mail.png" alt="mail"></a></li>
+                        <li><a href="tel:0415138532"><img src="../call.png" alt="call" ></a></li>
+                    </div>        
+                </ul>
+            </div>
+        </div>
+    </div>
+<script src="homeweb.js" type="text/javascript"></script>
 </body>
 </html>
